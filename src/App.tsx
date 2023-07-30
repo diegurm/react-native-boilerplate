@@ -1,3 +1,4 @@
+import 'react-native-gesture-handler';
 import React from 'react';
 import type { PropsWithChildren } from 'react';
 import {
@@ -57,7 +58,7 @@ function App(): JSX.Element {
 
   return (
     <SafeAreaView style={backgroundStyle}>
-      <Statusbar isDarkMode={isDarkMode}   />
+      <Statusbar isDarkMode={isDarkMode} />
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
@@ -78,8 +79,7 @@ function App(): JSX.Element {
           </Section>
           <Section title="Learn More">
             Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
+          </Section>        
         </View>
       </ScrollView>
     </SafeAreaView>

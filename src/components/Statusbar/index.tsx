@@ -9,7 +9,7 @@ type StatusbarProps = PropsWithChildren<{
   isDarkMode: boolean;
 }>;
 
-const Statusbar: React.FC<StatusbarProps> = ({ isDarkMode }) => {
+const Statusbar: React.FC<StatusbarProps> = ({isDarkMode}) => {
 
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
