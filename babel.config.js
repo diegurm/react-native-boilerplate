@@ -6,12 +6,10 @@ module.exports = {
     },
   },
   plugins: [
-    [
-      'babel-plugin-root-import',
-      {
-        rootPathPrefix: '~',
-        rootPathSuffix: 'src',
-      },
-    ],
+    ['babel-plugin-root-import', {
+      rootPathPrefix: '~',
+      rootPathSuffix: 'src',
+    }],
+    'react-native-reanimated/plugin', // Ensure this line is present
   ],
 };
