@@ -5,7 +5,7 @@ import {View} from 'react-native';
 
 import MatIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import { PreferencesContext } from '~/contexts/preferences.context'
-import * as S from './styles';
+import * as S from './DrawerContext.styles';
 
 const DrawerContent: React.FC<any> = (props) => {
   const theme = useTheme();

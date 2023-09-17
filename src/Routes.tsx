@@ -6,13 +6,12 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import { useTheme, Text } from 'react-native-paper';
-import MatIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
+import DrawerContent from '~/components/DrawerContent';
 import { navigationRef } from '~/services/navigation';
 import { PreferencesContext } from '~/contexts/preferences.context';
 import { LightTheme, DarkTheme } from '~/theme';
-import DrawerContent from '~/components/DrawerContent';
 
 const Drawer = createDrawerNavigator();
 const Stack = createStackNavigator();
@@ -22,7 +21,7 @@ const Screen: any = ({ title }: { title: string }) => {
   const theme = useTheme()
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: theme.colors.background }}>
-      <Text>{title}</Text>
+      <Text testID='screen-title'>{title}</Text>
     </View>
   )
 };
