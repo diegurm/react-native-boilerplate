@@ -1,6 +1,7 @@
 import 'react-native-gesture-handler';
-import React, { useState, useCallback, useMemo } from 'react';
+import React, { useState, useCallback, useMemo, useEffect } from 'react';
 import { Provider as PaperProvider } from 'react-native-paper';
+import SplashScreen from 'react-native-splash-screen';
 import { useColorScheme } from 'react-native';
 
 import Statusbar from '~/components/Statusbar';
@@ -24,6 +25,10 @@ function App(): JSX.Element {
     }),
     [toggleTheme, isThemeDark]
   );
+
+  useEffect(() => {
+    SplashScreen.hide();
+  }, []);
 
   return (
     <>

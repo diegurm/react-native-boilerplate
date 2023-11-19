@@ -16,7 +16,7 @@ const { LightTheme: AdpLightTheme, DarkTheme: AdpDarkTheme } =
   });
 
 const CustomTheme = {
-  colors: { primary: '#303f9f' },
+  colors: { primary: '#4400FF' },
 }
 
 const LightTheme = merge(merge(MD3LightTheme, AdpLightTheme), CustomTheme);

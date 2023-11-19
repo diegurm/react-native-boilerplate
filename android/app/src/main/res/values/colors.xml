@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="background_app">#F7f5fa</color>
+  <color name="background_splash">#4400FF</color>
+  <color name="white">#FFF</color>
+</resources>
